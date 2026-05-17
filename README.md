@@ -1,70 +1,85 @@
-# Getting Started with Create React App
+# 🏋️ Athlete Blueprint
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sport-inspired workout planner built with React. Every exercise is chosen based on what elite athletes actually do — not just what looks good in a gym bro split.
 
-## Available Scripts
+**Live:** [yourusername.github.io/athlete-blueprint](https://yourusername.github.io/athlete-blueprint)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## What It Is
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Most workout plans are built around muscle groups. This one is built around **performance demands** — the idea that athlete physiques come from movement patterns, not just bodybuilder logic.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Each exercise traces back to a specific sport and why that sport produces the best version of that body part:
 
-### `npm test`
+| Day | Focus | Inspired By |
+|-----|-------|-------------|
+| D1 | Upper Push | Swimmers · Gymnasts |
+| D2 | Lower — Quad | Track Cyclists · Sprinters |
+| D3 | Upper Pull | Climbers · Rowers · Gymnasts |
+| D4 | Lower — Power | Sprinters · Speed Skaters · Decathletes · Boxers |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **4-day split** with two scheduling options (2+2 or spread)
+- **Rest times per exercise** — no guessing between sets
+- **Alternatives for every exercise** — swap based on available equipment
+- **Schedule tab** — shows which days can go back-to-back and which need rest
+- **Rest Rules tab** — signs of overtraining and the golden rule of the split
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Stack
 
-### `npm run eject`
+- React (functional components + hooks)
+- Pure CSS-in-JS (no external UI library)
+- Deployed via GitHub Pages
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash
+git clone https://github.com/yourusername/athlete-blueprint.git
+cd athlete-blueprint
+npm install
+npm start
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Deploy to GitHub Pages
 
-## Learn More
+```bash
+npm install --save-dev gh-pages
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Add to `package.json`:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```json
+"homepage": "https://yourusername.github.io/athlete-blueprint",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+```
 
-### Code Splitting
+Then run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm run deploy
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Philosophy
 
-### Making a Progressive Web App
+> Bodybuilding creates muscles optimised for size and symmetry.  
+> Sports physiques are optimised for performance demands.  
+> That's why athlete physiques often look more naturally impressive — even if they're smaller.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+MIT
