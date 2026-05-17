@@ -2,7 +2,7 @@
 
 A sport-inspired workout planner built with React. Every exercise is chosen based on what elite athletes actually do — not just what looks good in a gym bro split.
 
-**Live:** [yourusername.github.io/athlete-blueprint](https://yourusername.github.io/athlete-blueprint)
+**Live:** [athlete-blueprint](https://mrigank590.github.io/athlete-blueprint)
 
 ---
 
