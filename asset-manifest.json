@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/athlete-blueprint/static/js/main.0899762c.js",
+    "main.js": "/athlete-blueprint/static/js/main.4b8b01d9.js",
     "index.html": "/athlete-blueprint/index.html",
-    "main.0899762c.js.map": "/athlete-blueprint/static/js/main.0899762c.js.map"
+    "main.4b8b01d9.js.map": "/athlete-blueprint/static/js/main.4b8b01d9.js.map"
   },
   "entrypoints": [
-    "static/js/main.0899762c.js"
+    "static/js/main.4b8b01d9.js"
   ]
 }
