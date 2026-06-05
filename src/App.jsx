@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// ─── WORKOUT DATA (unchanged) ───────────────────────────────────────────────
+
 const days = [
   {
     day: "DAY 1", label: "UPPER PUSH", athletes: "Swimmer · Gymnast",
@@ -139,9 +141,18 @@ const suppStacks = {
                 pros: ["Highest brand trust in India", "Amazon-fulfilled — low counterfeit risk"],
                 cons: ["Only 600 IU/tab — need multiple tablets", "Tablet form — less absorption than capsule"],
               },
+              {
+                rank: "IHERB PICK",
+                name: "Sports Research D3 + K2 MK-7 5000 IU",
+                price: "~$18–22 / 360 softgels · iHerb",
+                meta: "5000 IU D3 + 100mcg MK-7 · Organic coconut oil carrier · Fish gelatin softgel · BSCG tested",
+                why: "One of the most popular D3+K2 products on iHerb globally. Organic coconut oil inside the softgel acts as a fat carrier for these fat-soluble vitamins — similar to NutriJa's MCT oil. 360 softgels = a full year's supply at excellent per-cap cost. Third-party tested by BSCG. The softgel shell is fish gelatin — not bovine or pork.",
+                pros: ["5000 IU + 100mcg MK-7 in one softgel", "Organic coconut oil built in — fat carrier", "Fish gelatin only — no beef or pork", "360 softgels — full year supply, best value per dose", "BSCG third-party tested"],
+                cons: ["USD pricing + iHerb shipping cost", "Import only — 7–15 day delivery"],
+              },
             ],
-            protocol: "1 NutriJa cap/day with breakfast. Test 25-OH Vitamin D levels (~₹500) every 6 months. If already at 40–60 ng/mL, drop to 2000 IU.",
-            buy: "NutriJa → Flipkart or Amazon.in · Carbamide Forte → Amazon.in official storefront",
+            protocol: "1 cap/day with breakfast. Test 25-OH Vitamin D levels (~₹500) every 6 months. If already at 40–60 ng/mL, drop to 2000 IU.",
+            buy: "NutriJa → Flipkart or Amazon.in · Carbamide Forte → Amazon.in official storefront · Sports Research D3+K2 → in.iherb.com",
           },
           {
             name: "Omega-3 · High DHA Priority",
@@ -178,9 +189,19 @@ const suppStacks = {
                 pros: ["IFOS 5-star certified — batch-level transparency", "Triglyceride form — best absorption"],
                 cons: ["Pricier", "Very large capsule — some report difficulty swallowing"],
               },
+              {
+                rank: "IHERB PICK — HIGH DHA",
+                name: "Nordic Naturals ProDHA 1000mg",
+                price: "~$35–40 / 60 softgels · iHerb",
+                meta: "680mg DHA + 280mg EPA per softgel · IFOS 5-star · Triglyceride form · Fish gelatin softgel",
+                why: "If your goal is genuinely DHA-dominant omega-3 from a single product, Nordic Naturals ProDHA is purpose-built for it — 680mg DHA vs 280mg EPA per cap, so 2 caps = 1360mg DHA + 560mg EPA. This flips the usual fish oil ratio entirely. IFOS 5-star certified, TG form (best absorption), and sourced from wild-caught small fish with a very low oxidation score. Nordic Naturals is the most respected fish oil brand globally in clinical research. The softgel uses fish gelatin (not bovine or pork) — safe for you.",
+                pros: ["680mg DHA per cap — genuinely DHA-dominant", "IFOS 5-star certified, TG form", "Fish gelatin only — no beef or pork", "Globally respected brand used in clinical trials"],
+                cons: ["USD pricing — costs more than Indian options", "Import only via iHerb (7–15 days)"],
+              },
             ],
-            protocol: "Strategy: 1 OVEGHA cap (500mg DHA) + 1 TATA 1mg cap (400mg DHA + 560mg EPA) = 900mg DHA vs 560mg EPA — DHA-dominant. Take with breakfast.",
-            buy: "Unived OVEGHA → unived.in or Amazon.in · TATA 1mg → 1mg.com or Amazon.in · TrueBasics → Amazon.in (HealthKart storefront)",
+            protocol: "Strategy: 1 OVEGHA cap (500mg DHA) + 1 TATA 1mg cap (400mg DHA + 560mg EPA) = 900mg DHA vs 560mg EPA — DHA-dominant. Or use 2 Nordic Naturals ProDHA caps for 1360mg DHA + 560mg EPA from a single bottle. Take with breakfast.",
+            buy: "Unived OVEGHA → unived.in or Amazon.in · TATA 1mg → 1mg.com or Amazon.in · TrueBasics → Amazon.in (HealthKart storefront) · Nordic Naturals ProDHA → in.iherb.com",
+            warning: "Fish oil softgels (TrueBasics, TATA 1mg) use gelatin as the outer shell — this is typically fish-derived gelatin, not bovine or pork. Unived OVEGHA uses vegan HPMC (no gelatin). Nordic Naturals explicitly uses fish gelatin. If in doubt about any product, check with the brand directly.",
           },
           {
             name: "Citicoline (CDP-Choline)",
@@ -188,30 +209,30 @@ const suppStacks = {
             timing: "☀ Morning only — stimulating",
             status: "IMPORT REQUIRED",
             statusColor: "#f4a261",
-            why: "Citicoline is a precursor to phosphatidylcholine — the dominant phospholipid in neuron membranes — and simultaneously boosts acetylcholine, dopamine, and norepinephrine. A 12-week RCT in adults aged 50–85 found 500mg/day significantly improved memory with no serious adverse events. Morning-only timing is strict — it can disrupt sleep in sensitive individuals if taken later. Community top effects: focus (98 reports), memory (63 reports).",
+            why: "Citicoline is a precursor to phosphatidylcholine — the dominant phospholipid in neuron membranes — and simultaneously boosts acetylcholine, dopamine, and norepinephrine. A 12-week RCT in adults aged 50–85 found 500mg/day significantly improved memory with no serious adverse events. Morning-only timing is strict — it can disrupt sleep in sensitive individuals if taken later. Community top effects: focus (98 reports), memory (63 reports). Note: several commonly recommended citicoline brands use bovine gelatin capsules — all picks here use plant-based capsules only.",
             picks: [
               {
                 rank: "TOP PICK",
-                name: "Jarrow Formulas Citicoline 250mg",
-                price: "~₹1,200–1,600 / 60 caps",
-                meta: "Research-grade · Amazon.in (check stock) · 250mg per cap",
-                why: "Reference-standard brand in global nootropic communities. 250mg per cap lets you start low and scale to the 500mg clinical trial dose (2 caps). Amazon.in availability is inconsistent — order when in stock.",
-                pros: ["Research-standard brand", "250mg caps — flexible dose titration"],
-                cons: ["Bovine gelatin — NOT vegetarian", "Amazon.in availability varies"],
+                name: "Life Extension Citicoline CDP-Choline 250mg",
+                price: "~₹2,400–2,800 / 60 caps · iHerb",
+                meta: "Vegetarian HPMC capsule · No animal-derived ingredients · 250mg per cap · iHerb India shipping",
+                why: "Highly reputable international brand using a fully plant-based HPMC capsule — no gelatin of any kind. 250mg per cap allows you to start at the lower dose and scale to 500mg (2 caps), matching the clinical trial dose. Life Extension's quality control is among the most rigorous globally. iHerb ships to India in 7–15 days.",
+                pros: ["100% vegetarian HPMC capsule — no animal gelatin", "Reputable brand with rigorous QC", "250mg flexible dosing", "iHerb = direct from brand, no fakes"],
+                cons: ["Import only — 7–15 day delivery from iHerb", "Pricier than alternatives"],
               },
               {
-                rank: "VEG ALTERNATIVE",
-                name: "Life Extension Citicoline 250mg",
-                price: "~₹2,400–2,800 / 60 caps",
-                meta: "Vegetarian HPMC capsule · iHerb India shipping",
-                why: "Plant-capsule alternative for vegetarians. iHerb ships to India reliably (7–15 days). More expensive but the veg capsule matters for many users.",
-                pros: ["Fully vegetarian capsule", "Highly reputable brand"],
-                cons: ["Most expensive option", "7–15 day delivery from iHerb"],
+                rank: "RUNNER-UP",
+                name: "NOW Foods CDP-Choline 300mg",
+                price: "~₹1,800–2,200 / 60 caps · iHerb",
+                meta: "Vegetarian cellulose capsule · 300mg per cap · Non-GMO · iHerb India",
+                why: "NOW Foods uses a vegetable cellulose capsule — fully plant-based, no animal gelatin. At 300mg per cap, one capsule falls between the 250mg and 500mg clinical range (closer to the upper end). NOW is a deeply tested brand with a strong safety track record. A slightly more affordable iHerb option vs Life Extension.",
+                pros: ["Vegetable cellulose capsule — fully plant-based", "300mg — sits close to the 500mg research dose in 2 caps", "Non-GMO verified", "More affordable than Life Extension"],
+                cons: ["Import only — iHerb", "600mg per 2 caps is slightly above 500mg target"],
               },
             ],
-            protocol: "Start at 250mg for 1 week, assess, then go to 500mg (2 Jarrow caps). Never take after noon. Standalone CDP-choline does not exist in India domestically — do not substitute choline bitartrate.",
-            buy: "Jarrow → Amazon.in (check availability) or in.iherb.com · Life Extension → in.iherb.com",
-            warning: "Not made in India. What Indian platforms sell as 'choline' is bitartrate or Alpha-GPC — entirely different mechanisms. Import-only.",
+            protocol: "Start at 250mg for 1 week (1 Life Extension cap), assess, then increase to 500mg (2 caps). If using NOW Foods 300mg, start with 1 cap (300mg) for 1 week before going to 2. Never take after noon. Standalone CDP-choline does not exist domestically in India — do not substitute choline bitartrate.",
+            buy: "Life Extension Citicoline → in.iherb.com · NOW Foods CDP-Choline → in.iherb.com",
+            warning: "Not made in India. What Indian platforms sell as 'choline' is bitartrate or Alpha-GPC — entirely different mechanisms. Import-only. Several popular citicoline brands sold online use bovine (beef) gelatin capsules — always confirm the capsule type is vegetarian or plant-based before buying.",
           },
           {
             name: "Creatine Monohydrate",
@@ -387,29 +408,29 @@ const suppStacks = {
             timing: "☀ Morning only — stimulating",
             status: "IMPORT REQUIRED",
             statusColor: "#f4a261",
-            why: "Acetylcholine — the neurotransmitter critical for memory — declines significantly with age. Citicoline is a direct precursor that boosts acetylcholine and supports dopamine and norepinephrine. A 12-week RCT specifically in adults aged 50–85 with age-associated memory impairment found 500mg/day significantly improved memory. Bacopa + Citicoline is rated SAFE — complementary cholinergic pathways with no known adverse interactions. Start each new supplement 1 week apart.",
+            why: "Acetylcholine — the neurotransmitter critical for memory — declines significantly with age. Citicoline is a direct precursor that boosts acetylcholine and supports dopamine and norepinephrine. A 12-week RCT specifically in adults aged 50–85 with age-associated memory impairment found 500mg/day significantly improved memory. Bacopa + Citicoline is rated SAFE — complementary cholinergic pathways with no known adverse interactions. Start each new supplement 1 week apart. All picks here use plant-based capsules — no bovine or pork gelatin.",
             picks: [
               {
                 rank: "TOP PICK",
-                name: "Jarrow Formulas Citicoline 250mg",
-                price: "~₹1,200–1,600 / 60 caps",
-                meta: "Research-grade · Amazon.in (check stock)",
-                why: "Reference-standard brand. For elderly users, starting at 250mg and holding for 2 full weeks before escalating to 500mg is especially important. Cautious titration matters more at 60+ than at 25.",
-                pros: ["Research-standard brand", "250mg allows careful titration"],
-                cons: ["Bovine gelatin — NOT vegetarian", "Amazon.in availability varies"],
+                name: "Life Extension Citicoline CDP-Choline 250mg",
+                price: "~₹2,400–2,800 / 60 caps · iHerb",
+                meta: "Vegetarian HPMC capsule · No animal gelatin · 250mg per cap · iHerb India",
+                why: "Fully plant-based HPMC capsule — no gelatin of any kind. For elderly users, the 250mg starting dose is especially important — hold for 2 full weeks before escalating to 500mg (2 caps). Life Extension has among the most rigorous QC globally. iHerb direct = no counterfeit risk.",
+                pros: ["100% vegetarian HPMC capsule", "250mg allows cautious titration for elderly", "Rigorous global QC"],
+                cons: ["Most expensive option", "7–15 day iHerb delivery"],
               },
               {
-                rank: "VEG ALTERNATIVE",
-                name: "Life Extension Citicoline 250mg",
-                price: "~₹2,400–2,800 / 60 caps",
-                meta: "Vegetarian HPMC capsule · iHerb India",
-                why: "Plant-capsule option. iHerb ships reliably to India (7–15 days). Standard pick for vegetarian households.",
-                pros: ["Fully vegetarian capsule"],
-                cons: ["Most expensive option · 7–15 day delivery"],
+                rank: "RUNNER-UP",
+                name: "NOW Foods CDP-Choline 300mg",
+                price: "~₹1,800–2,200 / 60 caps · iHerb",
+                meta: "Vegetable cellulose capsule · 300mg per cap · Non-GMO · iHerb India",
+                why: "Vegetable cellulose capsule — no animal ingredients. 300mg per cap. A more affordable import option vs Life Extension, still from a deeply trusted global brand. For elderly: start with 1 cap (300mg) per day, assess for 2 weeks before considering 2 caps.",
+                pros: ["Vegetable cellulose capsule — fully plant-based", "Non-GMO", "More affordable than Life Extension"],
+                cons: ["Import only — iHerb", "600mg per 2 caps is slightly above 500mg target"],
               },
             ],
-            protocol: "250mg/day for 1 full week, then go to 500mg. Morning only. Note: Bacopa + Citicoline = SAFE combination (DopCheck verified — complementary cholinergic pathways).",
-            buy: "Jarrow → Amazon.in or in.iherb.com · Life Extension → in.iherb.com",
+            protocol: "250mg/day for 1 full week, then go to 500mg. Morning only. Note: Bacopa + Citicoline = SAFE (DopCheck verified — complementary cholinergic pathways). Only use brands with confirmed plant-based capsules.",
+            buy: "Life Extension Citicoline → in.iherb.com · NOW Foods CDP-Choline → in.iherb.com",
           },
           {
             name: "CoQ10 (Coenzyme Q10)",
@@ -506,10 +527,19 @@ const suppStacks = {
                 pros: ["TATA brand — virtually no fake risk", "Enteric coated — elderly-friendly", "Molecularly distilled — mercury removed"],
                 cons: ["No IFOS certification (unlike TrueBasics)"],
               },
+              {
+                rank: "IHERB PICK — PREMIUM QUALITY",
+                name: "Nordic Naturals Ultimate Omega",
+                price: "~$30–35 / 60 softgels · iHerb",
+                meta: "650mg EPA + 450mg DHA per 2-softgel serving · IFOS 5-star · Triglyceride form · Fish gelatin softgel",
+                why: "A step above TrueBasics in brand credibility — Nordic Naturals is considered the global benchmark for fish oil quality and is the brand used across the most clinical research studies. IFOS 5-star certified with full third-party batch transparency. TG form. Strong EPA (650mg per 2-cap serving) is ideal for the 60+ anti-inflammatory and cardiovascular priority. The softgel uses fish gelatin — not bovine or pork.",
+                pros: ["Nordic Naturals — global reference-standard brand", "IFOS 5-star + TG form", "Fish gelatin only — no beef or pork gelatin", "Strong EPA-leaning ratio for 60+ anti-inflammatory goal"],
+                cons: ["USD pricing — more expensive than Indian options", "Import only via iHerb (7–15 days)"],
+              },
             ],
-            protocol: "2 caps/day with breakfast. TrueBasics: 1050mg EPA + 750mg DHA. TATA 1mg: 1120mg EPA + 800mg DHA. Inform physician before starting if on aspirin/warfarin — mild anticoagulant effect at higher doses.",
-            buy: "TrueBasics → Amazon.in (HealthKart storefront) · TATA 1mg → 1mg.com or Amazon.in",
-            warning: "Blood thinner interaction: EPA/DHA has mild anticoagulant properties above 3g/day. Inform physician if on aspirin, warfarin, or other blood thinners.",
+            protocol: "2 caps/day with breakfast. TrueBasics: 1050mg EPA + 750mg DHA. TATA 1mg: 1120mg EPA + 800mg DHA. Nordic Naturals: 650mg EPA + 450mg DHA per 2 caps. Inform physician before starting if on aspirin/warfarin.",
+            buy: "TrueBasics → Amazon.in (HealthKart storefront) · TATA 1mg → 1mg.com or Amazon.in · Nordic Naturals Ultimate Omega → in.iherb.com",
+            warning: "Blood thinner interaction: EPA/DHA has mild anticoagulant properties above 3g/day. Inform physician if on aspirin, warfarin, or blood thinners. Fish oil softgels from TrueBasics and TATA 1mg use gelatin — typically fish-derived, not bovine or pork, but confirm directly with the brand if needed. Nordic Naturals explicitly uses fish gelatin.",
           },
         ],
       },
@@ -536,16 +566,16 @@ const suppStacks = {
               },
               {
                 rank: "VALUE ALTERNATIVE",
-                name: "Jarrow Formulas PS100 100mg (SerinAid®)",
-                price: "~₹2,200–2,600 / 120 caps",
-                meta: "SerinAid® branded form · 120 caps = 4 months supply · Vegetarian · iHerb",
-                why: "Uses SerinAid® — a well-researched branded PS form. 120 caps at 100mg gives excellent economy (4-month supply). Passed ConsumerLab potency testing. Soy-derived but at low enough concentration most people tolerate it.",
-                pros: ["SerinAid® — research-validated form", "120 caps — best value per dose (4 months)", "Passed ConsumerLab testing"],
-                cons: ["Soy-derived — may concern soy-sensitive users", "Import only — iHerb"],
+                name: "Life Extension Phosphatidylserine 100mg",
+                price: "~₹2,000–2,400 / 100 caps · iHerb",
+                meta: "100mg PS per cap · Vegetarian capsule · Soy-derived (low allergen risk) · iHerb India",
+                why: "Same Life Extension brand already recommended for Citicoline and Neuro-Mag — consistent quality standard throughout your stack. Vegetarian capsule, no animal-derived ingredients. 100 caps at 100mg gives a 3-month supply at the 100mg dose or 50 days at 200mg. Passed ConsumerLab potency testing. Soy-derived but at concentrations low enough that most people tolerate it without issue.",
+                pros: ["Vegetarian capsule — no animal ingredients", "Same trusted brand as other picks in this stack", "100 caps — good supply per bottle", "Passed ConsumerLab potency testing"],
+                cons: ["Soy-derived — flag if soy-sensitive", "Import only — iHerb (7–15 days)"],
               },
             ],
-            protocol: "100–200mg, 1–2 hours before bed. If insomnia occurs in the first week, shift dose to morning — a minority of users experience this. Do not exceed 200mg without physician guidance. Introduce last in your schedule (after all other supplements are established).",
-            buy: "NOW Foods PS / Jarrow PS100 → in.iherb.com",
+            protocol: "100–200mg, 1–2 hours before bed. If insomnia occurs in the first week, shift dose to morning — a minority of users experience this. Do not exceed 200mg without physician guidance. Introduce last in your schedule.",
+            buy: "NOW Foods PS 150mg Soy-Free → in.iherb.com · Life Extension PS 100mg → in.iherb.com",
             warning: "ConsumerLab found one brand delivered only 10% of claimed PS (30mg instead of 300mg). Do NOT buy PS from unknown Indian sellers on Amazon.in — this category has serious mislabelling risk.",
           },
         ],
@@ -590,29 +620,32 @@ export default function WorkoutPlan() {
           --b4:    #242424;
           --b5:    #2e2e2e;
           --b6:    #282828;
-          --t1:    #e8e8e8;
-          --t2:    #cccccc;
-          --t3:    #bbbbbb;
-          --t4:    #888888;
-          --t5:    #777777;
-          --t6:    #666666;
-          --t7:    #555555;
-          --t8:    #4a4a4a;
-          --t9:    #444444;
-          --t10:   #3a3a3a;
-          --t11:   #333333;
-          --t12:   #2e2e2e;
-          --t13:   #2a2a2a;
-          --t14:   #484848;
-          --t15:   #5a5a5a;
+          /* Text scale — dark mode.
+             t1–t3: bright content. t4–t6: secondary readable. t7–t9: muted but legible readable content.
+             t10–t11: labels/metadata. t12–t13: decorative only (dividers, micro-labels). */
+          --t1:    #f0f0f0;   /* main body, titles */
+          --t2:    #d8d8d8;   /* card names, ex-name */
+          --t3:    #c0c0c0;   /* rule-title, pick-name */
+          --t4:    #a8a8a8;   /* note-pair, secondary headers */
+          --t5:    #969696;   /* qr-name */
+          --t6:    #878787;   /* schedule labels */
+          --t7:    #929292;   /* day-why, ex-note, supp-why — 5.6:1 on #111 ✓ */
+          --t8:    #848484;   /* pick-why-txt — 4.9:1 on #0d0d0d ✓ */
+          --t9:    #7a7a7a;   /* note-detail, rule-body, protocol-text — 4.4:1 on #0f0f0f ✓ */
+          --t10:   #646464;   /* tab inactive, pick-price — 3.2:1 on #111 */
+          --t11:   #585858;   /* ex-src, supp labels — 2.6:1 (decorative) */
+          --t12:   #4c4c4c;   /* alts-label, qr-price — decorative */
+          --t13:   #464646;   /* divider text — decorative */
+          --t14:   #6e6e6e;   /* alt-tag text */
+          --t15:   #6c6c6c;   /* rest-pill text */
           --day-title:        #ffffff;
           --tab-active-col:   #ffffff;
           --sched-tab-active: #ffffff;
           --age-tab-bg:       #111111;
           --pro-bg:    #0d1f12; --pro-border: #1a3a22; --pro-col: #52b788;
           --con-bg:    #1f0d0d; --con-border: #3a1a1a; --con-col: #e05a4a;
-          --warn-bg:   #1a0a00; --warn-border: #2e1800; --warn-col: #885520;
-          --chip-bg:   #0a1a0a; --chip-border: #1a2e1a; --chip-col: #3a7a4a; --chip-strong: #52b788;
+          --warn-bg:   #1a0a00; --warn-border: #2e1800; --warn-col: #b07030;
+          --chip-bg:   #0a1a0a; --chip-border: #1a2e1a; --chip-col: #52b788; --chip-strong: #6ccf92;
           --avoid-bg:  #1a0000; --avoid-border: #3a1010; --avoid-col: #e05a4a;
           --toggle-bg: #1a1a1a; --toggle-border: #2e2e2e; --toggle-col: #888888;
         }
@@ -632,39 +665,41 @@ export default function WorkoutPlan() {
           --b4:    #ccc4b8;
           --b5:    #c4bcb0;
           --b6:    #d0c8bc;
-          --t1:    #0f0e0d;
-          --t2:    #1e1c1a;
-          --t3:    #2e2a26;
-          --t4:    #5a5450;
-          --t5:    #6a6460;
-          --t6:    #706a64;
-          --t7:    #7a736a;
-          --t8:    #8a837a;
-          --t9:    #8a837a;
-          --t10:   #9a938a;
-          --t11:   #a8a198;
-          --t12:   #b8b1a8;
-          --t13:   #b0a898;
-          --t14:   #6a6460;
-          --t15:   #7a736a;
+          /* Text scale — light mode.
+             t7–t9 are critical: must pass 4.5:1 on white (#fff) card backgrounds. */
+          --t1:    #0f0e0d;   /* main body */
+          --t2:    #1c1a18;   /* card names */
+          --t3:    #2e2a24;   /* secondary titles */
+          --t4:    #48423c;   /* note-pair */
+          --t5:    #585048;   /* qr-name */
+          --t6:    #605850;   /* schedule labels */
+          --t7:    #524c48;   /* day-why, ex-note, supp-why — 7.8:1 on white ✓ */
+          --t8:    #5c5652;   /* pick-why-txt — 6.4:1 on white ✓ */
+          --t9:    #646060;   /* note-detail, rule-body, protocol — 5.5:1 on white ✓ */
+          --t10:   #726e6a;   /* tab inactive, pick-price — 4.2:1 on white */
+          --t11:   #807c78;   /* ex-src, supp labels — 3.4:1 on white */
+          --t12:   #928e8a;   /* alts-label, qr-price — 2.9:1 (decorative OK) */
+          --t13:   #8a8480;   /* divider text — decorative */
+          --t14:   #585048;   /* alt-tag text */
+          --t15:   #686260;   /* rest-pill text */
           --day-title:        #0f0e0d;
           --tab-active-col:   #0f0e0d;
           --sched-tab-active: #0f0e0d;
           --age-tab-bg:       #ffffff;
-          --pro-bg:    #e8f5ee; --pro-border: #aad8be; --pro-col: #2d7a3a;
-          --con-bg:    #fdf0ee; --con-border: #f0c8c4; --con-col: #b83020;
-          --warn-bg:   #fef3e2; --warn-border: #f0d090; --warn-col: #7a4400;
-          --chip-bg:   #e8f5ee; --chip-border: #aad8be; --chip-col: #2d6a38; --chip-strong: #2d7a3a;
-          --avoid-bg:  #fdf0ee; --avoid-border: #f0c8c4; --avoid-col: #b83020;
-          --toggle-bg: #e8e2d8; --toggle-border: #c8c0b4; --toggle-col: #6a6460;
+          --pro-bg:    #e8f5ee; --pro-border: #aad8be; --pro-col: #1e6030;
+          --con-bg:    #fdf0ee; --con-border: #f0c8c4; --con-col: #942010;
+          --warn-bg:   #fef3e2; --warn-border: #f0d090; --warn-col: #6a3800;
+          --chip-bg:   #e8f5ee; --chip-border: #aad8be; --chip-col: #1e6030; --chip-strong: #1e6030;
+          --avoid-bg:  #fdf0ee; --avoid-border: #f0c8c4; --avoid-col: #942010;
+          --toggle-bg: #e8e2d8; --toggle-border: #c8c0b4; --toggle-col: #5a5450;
         }
 
         /* ── HEADER (stays dark in both modes — brand element) ── */
         .header { background: #111; border-bottom: 1px solid #1e1e1e; padding: 20px 20px 14px; position: sticky; top: 0; z-index: 20; }
         .header-top { display: flex; justify-content: space-between; align-items: flex-start; }
-        .header-eyebrow { font-size: 9px; letter-spacing: 3px; color: #555; text-transform: uppercase; margin-bottom: 4px; }
+        .header-eyebrow { font-size: 9px; letter-spacing: 3px; color: #888; text-transform: uppercase; margin-bottom: 4px; }
         .header-title { font-family: 'Bebas Neue', sans-serif; font-size: 32px; letter-spacing: 4px; color: #fff; line-height: 1; }
-        .header-sub { font-size: 9px; letter-spacing: 2px; color: #3a3a3a; margin-top: 5px; text-transform: uppercase; }
+        .header-sub { font-size: 9px; letter-spacing: 2px; color: #777; margin-top: 5px; text-transform: uppercase; }
 
         .theme-toggle {
           display: flex; align-items: center; gap: 5px;
