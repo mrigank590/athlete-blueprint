@@ -927,7 +927,7 @@ export default function WorkoutPlan() {
                 <div className="week-grid">
                   {s.weeks.map((w, i) => (
                     <div key={i} className={`week-cell ${w.type === "w" ? "wc-workout" : "wc-rest"}`}
-                      style={{ "--wc": w.type === "w" ? w.color : "#2a2a2a" }}>
+                      style={{ "--wc": w.type === "w" ? w.color : (isLight ? "#888080" : "#606060") }}>
                       <div className="wc-label">{w.label}</div>
                       <div className="wc-day">{w.day}</div>
                       <div className="wc-name">{w.name}</div>
@@ -978,7 +978,7 @@ export default function WorkoutPlan() {
           <div className="divider" style={{ marginTop: 28 }}>The Golden Rule</div>
           <div className="note-card" style={{ borderColor: "var(--b5)" }}>
             <div style={{ fontSize: 12, color: "var(--t5)", lineHeight: 1.8 }}>
-              The only pair you should <span style={{ color: "#f4a261" }}>never</span> do back-to-back is <span style={{ color: "#f4a261" }}>Day 2 + Day 4</span>. Both are lower body, both are taxing on the posterior chain and nervous system. Everything else is manageable with proper sleep and nutrition.
+              The only pair you should <span style={{ color: isLight ? "#b85000" : "#f4a261" }}>never</span> do back-to-back is <span style={{ color: isLight ? "#b85000" : "#f4a261" }}>Day 2 + Day 4</span>. Both are lower body, both are taxing on the posterior chain and nervous system. Everything else is manageable with proper sleep and nutrition.
             </div>
           </div>
           <div className="divider" style={{ marginTop: 20 }}>Signs you need more rest</div>
